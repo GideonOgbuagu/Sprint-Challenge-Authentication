@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import { axiosWithAuth } from "../utils/axiosWithAuth"
 
 
-const Signup = (props) => {
-const [signup, setSignup] = useState({
+const Register = (props) => {
+const [register, setRegister] = useState({
     username: '',
-    password: '',
-    department: ''
+    password: ''
 })
 
 const handleChange = e => {
-    setSignup({
-        ...signup,
+    setRegister({
+        ...register,
         [e.target.name]: e.target.value
 
     })
@@ -21,10 +20,10 @@ const handleChange = e => {
 const handleSubmit = e => {
     e.preventDefault();
     axiosWithAuth()
-        .post("/api/auth/register", signup)
+        .post("/api/auth/register", register)
         .then(res => {
         //    console.log(res.data)
-            // localStorage.setItem('token', res.data.token)
+            localStorage.setItem('token', res.data.token)
             props.history.push('/login');
            
         })
@@ -38,28 +37,22 @@ const handleSubmit = e => {
                 <input
                     type="text"
                     name="username"
-                    value={signup.username}
+                    value={register.username}
                     onChange={handleChange}
                     placeholder="Enter Username"
                 />
                 <input
                     type="password"
                     name="password"
-                    value={signup.password}
+                    value={register.password}
                     onChange={handleChange}
                     placeholder="Enter Password"
                 />
-                <input
-                    type="department"
-                    name="department"
-                    value={signup.department}
-                    onChange={handleChange}
-                    placeholder="Enter Department"
-                />
-                <button>Sign Up</button>
+             
+                <button>Register</button>
             </form>
         </div>
     )
 }
 
-export default Signup;
+export default Register;
