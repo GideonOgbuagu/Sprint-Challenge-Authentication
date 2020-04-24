@@ -32,6 +32,7 @@ const handleSubmit = e => {
 
     return (
         <div className="form-container">
+             <p className="signout-text3">Continue with your username and password</p>
             <form onSubmit={handleSubmit} className="form1" autoComplete="off">
                 <input
                     type="text"

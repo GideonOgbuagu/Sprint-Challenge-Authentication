@@ -32,7 +32,8 @@ const handleSubmit = e => {
 
     return (
         <div className="form-container">
-            {/* <p>Welcome</p> */}
+            <h1 className="signout-text1">Welcome To Lambda Dad Jokes</h1>
+            <p className="signout-text2">Register with username and password</p>
             <form onSubmit={handleSubmit} className="form2" autoComplete="off">
                 <input
                     type="text"

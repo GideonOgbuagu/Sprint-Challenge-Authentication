@@ -44,15 +44,15 @@ a {
   color: white;
   /* color: black; */
   /* background-color: #ce3535; */
-  background-color: black;
+  background-color: #4d4d4d;
   text-decoration: none;
   /* border: 1px solid #ce3535; */
   /* border: 1px solid #222222; */
   /* border: 1px solid white; */
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5% 5%;
   font-weight: 700;
-  transition: border-bottom 10ms;
+  transition: backgound-color 900ms;
   /* margin-right: 10px; */
   /* width: 5%; */
   font-size: 0.95rem;
@@ -60,15 +60,15 @@ a {
   
 }
 
-a:focus {
+/* a:focus {
   background-color: black;
-}
+} */
 
 a:hover {
   /* border-bottom: 4px solid rgb(230, 227, 227);
   border-bottom: 4px solid rgb(37, 37, 37); */
-  background-color: #222222;
-  /* color: white; */
+  background-color: rgb(243, 243, 243);
+  color: #222222;
 
 }
 
@@ -99,7 +99,7 @@ a:hover {
 input {
   height: 38px;
   width: 270px;
-  border-radius: 0px; 
+  border-radius: 5px; 
   border: 1px solid lightgray;
   font-size: 1rem;
   padding: 0 10px;
@@ -143,6 +143,7 @@ button {
   /* border-radius: 5px; */
   text-transform: capitalize;
   margin-bottom: 40px;
+  
 }
 
 .signout {
@@ -151,7 +152,7 @@ button {
 
 
 p, h1, h2, h3 {
-  color: white;
+  color: black;
 }
 
 .user-header {
@@ -163,11 +164,21 @@ p, h1, h2, h3 {
 .user-department {
   font-size: 0.9rem;
 }
-.signout-text2 {
-  color: white;
-}
 
 .signout-text1 {
-  font-size: 2.4rem;
-  color: white;
+  font-size: 2.3rem;
+  color: #353535;
+}
+
+.signout-text2 {
+  color: rgb(241, 241, 241);
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+
+.signout-text3 {
+  color: black;
+  font-size: 1.2rem;
+  color: #383838;
+  color: rgb(241, 241, 241)
 }
