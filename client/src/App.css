@@ -1,7 +1,7 @@
 
 .App {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background-color: gray;
   /* background-image: linear-gradient(to bottom left, rgb(11, 247, 152), purple); */
@@ -11,7 +11,7 @@
   
 }
 
-.App-header ul {
+ ul {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
@@ -30,19 +30,28 @@
 
 }
 
+li {
+  width: 800px;
+  height: 80px;
+  list-style: none;
+  margin-right: 15px;
+  
+}
 
 a {
   width: 800px;
-  /* color: white; */
-  color: black;
-  /* background-color: #ce3535;
-  background-color: #808080; */
+  height: 80px;
+  color: white;
+  /* color: black; */
+  /* background-color: #ce3535; */
+  background-color: black;
   text-decoration: none;
   /* border: 1px solid #ce3535; */
-  border: 1px solid #222222;
-  /* border-radius: 3px; */
+  /* border: 1px solid #222222; */
+  /* border: 1px solid white; */
+  border-radius: 10px;
   padding: 5% 5%;
-  /* font-weight: bold; */
+  font-weight: 700;
   transition: border-bottom 10ms;
   /* margin-right: 10px; */
   /* width: 5%; */
@@ -51,27 +60,18 @@ a {
   
 }
 
-/* a:focus {
-  background-color: white;
-  color: #353434;
-  font-weight: bold;
-  border: 1px solid rgb(228, 228, 228);
-} */
+a:focus {
+  background-color: black;
+}
 
 a:hover {
   /* border-bottom: 4px solid rgb(230, 227, 227);
   border-bottom: 4px solid rgb(37, 37, 37); */
   background-color: #222222;
-  color: white;
+  /* color: white; */
 
 }
 
-li {
-  width: 800px;
-  list-style: none;
-  margin-right: 15px;
-  
-}
 .form-container {
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@ li {
 
 input {
   height: 38px;
-  width: 220px;
+  width: 270px;
   border-radius: 0px; 
   border: 1px solid lightgray;
   font-size: 1rem;
@@ -132,10 +132,10 @@ button {
 }
 
 .users-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-bottom: 1px solid white;
   padding-bottom: 25px;
-  color: black;
+  color: white;
 }
 
 .user {
@@ -155,15 +155,16 @@ p, h1, h2, h3 {
 }
 
 .user-header {
-  color: black;
+  color: rgb(29, 29, 29);
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .user-department {
   font-size: 0.9rem;
 }
 .signout-text2 {
-  color: black;
+  color: white;
 }
 
 .signout-text1 {

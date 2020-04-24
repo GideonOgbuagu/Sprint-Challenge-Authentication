@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 
-const Signout = () => {
+const Logout = () => {
 
-    const signedOut = () => {
+    const logOut = () => {
         localStorage.clear()
     }
     
     useEffect(() => {
-        signedOut()
+        logOut()
     }, []);
 
     return (
@@ -20,4 +20,4 @@ const Signout = () => {
     )
 }
 
-export default Signout;
+export default Logout;
