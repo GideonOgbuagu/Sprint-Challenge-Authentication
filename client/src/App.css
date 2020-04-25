@@ -44,18 +44,19 @@ a {
   color: white;
   /* color: black; */
   /* background-color: #ce3535; */
-  background-color: #4d4d4d;
+  /* background-color: #4d4d4d; */
   text-decoration: none;
   /* border: 1px solid #ce3535; */
   /* border: 1px solid #222222; */
   /* border: 1px solid white; */
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 5% 5%;
   font-weight: 700;
   transition: backgound-color 900ms;
   /* margin-right: 10px; */
   /* width: 5%; */
-  font-size: 0.95rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.02rem;
   /* border-bottom: 1px solid rgb(37, 37, 37); */
   
 }
@@ -65,10 +66,10 @@ a {
 } */
 
 a:hover {
-  /* border-bottom: 4px solid rgb(230, 227, 227);
-  border-bottom: 4px solid rgb(37, 37, 37); */
-  background-color: rgb(243, 243, 243);
-  color: #222222;
+  border-bottom: 4px solid rgb(230, 227, 227);
+  border-bottom: 2px solid #4d4d4d; 
+   /* background-color: rgb(243, 243, 243); */
+  color: #4d4d4d;
 
 }
 
@@ -84,7 +85,7 @@ a:hover {
   min-height: 20vh;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 40px;
   align-items: center;
 }
 .form2 {
@@ -92,7 +93,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
   
 }
 
@@ -161,24 +162,22 @@ p, h1, h2, h3 {
   font-weight: bold;
 }
 
-.user-department {
-  font-size: 0.9rem;
-}
 
 .signout-text1 {
-  font-size: 2.3rem;
-  color: #353535;
+  font-size: 3rem;
+  color: #4d4d4d;
+  letter-spacing: 0.02rem;
 }
 
 .signout-text2 {
-  color: rgb(241, 241, 241);
-  font-size: 1.2rem;
+  color: #f1f1f1;
+  font-size: 1rem;
   letter-spacing: 0.02rem;
 }
 
 .signout-text3 {
   color: black;
-  font-size: 1.2rem;
-  color: #383838;
-  color: rgb(241, 241, 241)
+  font-size: 1rem;
+  color: #f1f1f1;
+  letter-spacing: 0.02rem;
 }
