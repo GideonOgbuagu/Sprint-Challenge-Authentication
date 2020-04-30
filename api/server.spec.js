@@ -36,8 +36,6 @@ describe("server", function () {
         // const userName = "Fred";
         // const passWord = "secret";
 
-        // const present = await db("users").where({ username: userName });
-        // expect(present).toHaveLength(0);
 
         await request(server)
             .post("/api/auth/login")
@@ -59,9 +57,6 @@ describe("server", function () {
             });
         })
 
-
-        // const inserted = await db("users"); //.where({ name: hobbitName });
-        // expect(inserted).toHaveLength(2);
     });
   });
 });
